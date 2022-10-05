@@ -23,8 +23,10 @@ body{
 }
 
 .aside-desktop{
+    position: relative;
     width: 230px;
     background-color: rgb(177, 37, 37);
+    overflow-y: auto;
 }
 
 
@@ -109,11 +111,11 @@ header{
     padding: 0 1rem;
 }
 
-.list-inline li{
+.find-desk .list-inline li{
     padding: 1.25rem 0;
 }
 
-.list-inline li:first-child{
+.find-desk .list-inline li:first-child{
     padding-bottom: 1.25rem;
     padding-top: 0;
 }
@@ -136,3 +138,15 @@ header{
     margin-right: .625rem;
 }
 
+
+
+.name-playlist .list-inline li{
+    padding: .625rem 0;
+}
+
+
+.credits{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
