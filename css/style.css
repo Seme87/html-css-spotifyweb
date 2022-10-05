@@ -67,7 +67,6 @@ a{
 --------------------- */
 
 .page-container {
-    display: flex;
     height: calc(100% - 100px);
     background-color: aqua;
 }
@@ -75,7 +74,7 @@ a{
 @media screen and (max-width:1100px) {
     .page-container {
         display: block;
-
+        
     }
 
 }
@@ -142,7 +141,7 @@ header {
 
 .aside-desktop {
     overflow-y: auto;
-    max-height: calc(100% - 90px);
+    height: calc(100% - 90px);
     width: 230px;
     background-color: rgb(177, 37, 37);
 }
@@ -176,12 +175,17 @@ header {
     padding: 0 1rem;
 }
 
+.list-inline img{
+    width: 1.5625rem;
+    height: 1.5625rem;
+}
+
 .find-desk .list-inline li{
-    padding: 1.25rem 0;
+    padding: .9375rem 0;
 }
 
 .find-desk .list-inline li:first-child{
-    padding-bottom: 1.25rem;
+    padding-bottom: .9375rem;
     padding-top: 0;
 }
 
