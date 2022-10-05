@@ -10,11 +10,12 @@
 
 
 /* ---------------------
-        STRUCTURE
+        COMMON
 --------------------- */
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 
@@ -29,11 +30,7 @@ footer{
     background-color: black;
 }
 
-.page-container{
-    display: flex;
-    height: calc(100% - 100px);
-    background-color: aqua;
-}
+
 
 
 main{
@@ -42,7 +39,10 @@ main{
 }
 
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 .list-inline{
@@ -50,8 +50,50 @@ main{
 }
 
 /* ---------------------
-        STRUCTURE
+       COMMON
 --------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ---------------------
+       PAGE CONTAINER
+--------------------- */
+
+.page-container {
+    display: flex;
+    height: calc(100% - 100px);
+    background-color: aqua;
+}
+
+@media screen and (max-width:1100px) {
+    .page-container {
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .page-container {
+        display: flex;
+
+    }
+
+}
+
+/* ---------------------
+       PAGE CONTAINER
+--------------------- */
+
+
+
 
 
 
@@ -81,7 +123,7 @@ header {
 /* screen a 600px */
 @media screen and (max-width:600px){
     header {
-            width: calc(100% - 50px);
+        width: calc(100% - 50px);
  }
 
 }
@@ -92,12 +134,15 @@ header {
 
 
 
+
+
 /* ---------------------
         ASIDE DESKTOP
 --------------------- */
 
 .aside-desktop {
     overflow-y: auto;
+    max-height: calc(100% - 90px);
     width: 230px;
     background-color: rgb(177, 37, 37);
 }
@@ -184,15 +229,67 @@ padding: 1.875rem 1rem;
     padding-left: .3125rem;
 }
 
+/* ---------------------
+        ASIDE DESKTOP
+--------------------- */
+
+
+
+
+/* ---------------------
+        ASIDE MOBILE
+--------------------- */
+
+.home-logo #minilogo{
+    margin-bottom: 15px;
+}
+
+.home-logo i{
+    font-size: 1.875rem;
+}
+
+.home-logo{
+    padding: .3125rem 0;
+    width: 40px;
+    height: 90px;
+    margin: auto;
+}
+
+.aside-mobile img{
+    margin: auto;
+    text-align: center;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.aside-mobile{
+    overflow-y: auto;
+    max-height: 100%;
+    position: relative;
+}
+
+.down{
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right:10px;
+}
+
 /* screen a 600px */
 @media screen and (max-width:600px) {
+
+    .logo-desk{
+        display: none;
+    }
+
     .aside-desktop{
         display: none;
     }
 
     .aside-mobile{
+        max-height: 100%;
         display: block;
     }
 
-    
 }
