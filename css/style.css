@@ -54,6 +54,11 @@ header{
     background-color: rgba(0, 0, 0, 0.906);
 }
 
+
+.list-inline{
+    list-style: none;
+}
+
 /* ---------------------
         STRUCTURE
 --------------------- */
@@ -80,8 +85,9 @@ header{
 
 
 /* ---------------------
-        HEADER
+        ASIDE DESKTOP
 --------------------- */
+
 .logo-desk{
     background-color: rgb(0, 195, 255);
     padding: 0 1rem;
@@ -97,3 +103,36 @@ header{
     width:100px;
     height: auto;
 }
+
+
+.find-desk{
+    padding: 0 1rem;
+}
+
+.list-inline li{
+    padding: 1.25rem 0;
+}
+
+.list-inline li:first-child{
+    padding-bottom: 1.25rem;
+    padding-top: 0;
+}
+
+
+.playlist{
+    padding: 0 1rem;
+}
+
+.make-playlist{
+    padding-top: .625rem;
+    display: flex;
+    align-items: center;
+}
+
+.square-icon{
+    background-color:var(--second-color) ;
+    height:40px;
+    width: 40px;
+    margin-right: .625rem;
+}
+
