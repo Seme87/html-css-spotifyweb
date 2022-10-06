@@ -77,21 +77,6 @@ a{
     background-color: aqua;
 }
 
-/* @media screen and (max-width:1100px) {
-    .page-container {
-        display: block;
-        
-    }
-
-}
-
-@media screen and (max-width:600px) {
-    .page-container {
-        display: flex;
-
-    }
-
-} */
 
 /* ---------------------
        PAGE CONTAINER
@@ -112,9 +97,17 @@ header {
     right: 0;
     height: 90px;
     width: calc(100% - 230px);
-    background-color: rgba(0, 0, 0, 0.906);
+    background-color: rgba(0, 0, 0, 0.908);
 }
 
+.btn-header{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: inherit;
+    color: #fdfdfd;
+}
 
 
 .header-container{
@@ -146,7 +139,7 @@ header {
 --------------------- */
 
 .aside-desktop {
-    flex-shrink: 0;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -164,7 +157,7 @@ header {
 
 
 .logo-desk{
-    background-color: rgb(0, 195, 255);
+    background-color: rgba(0, 0, 0, 0.908);
     flex-shrink: 0;
     padding: 0 1rem;
     height: 90px;
@@ -191,6 +184,7 @@ header {
 
 
 .find-desk img{
+    filter: invert(10%);
     margin: 10px 10px;
 }
 
@@ -212,6 +206,10 @@ header {
     padding: .625rem 1rem;
 }
 
+.playlist h4{
+    color: #e5e5e5;
+}
+
 .make-playlist{
     padding-top: .625rem;
     display: flex;
@@ -226,10 +224,20 @@ header {
 }
 
 .name-playlist{
+    
     flex-grow: 1;
     margin-bottom: auto;
     padding: .625rem 16px;
     overflow-y: auto;
+}
+
+
+.name-playlist a{
+    color: #5d5d5d;
+}
+
+.list-inline li{
+    color: #a3a3a3;
 }
 
 .name-playlist .list-inline li{
