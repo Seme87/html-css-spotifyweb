@@ -28,6 +28,7 @@ body{
 
 footer{
     height: 100px;
+
     background-color: black;
 }
 
@@ -36,8 +37,9 @@ footer{
 
 main{
     height: calc(100%);
-
+    flex-grow: 1;
     overflow-y: auto;
+    
 }
 
 
@@ -144,9 +146,11 @@ header {
 --------------------- */
 
 .aside-desktop {
-    position: relative;
-    overflow-y: auto;
-    height: calc(100% - 90px);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
     width: 230px;
     background-color: rgb(177, 37, 37);
 }
@@ -161,6 +165,7 @@ header {
 
 .logo-desk{
     background-color: rgb(0, 195, 255);
+    flex-shrink: 0;
     padding: 0 1rem;
     height: 90px;
     display: flex;
@@ -176,8 +181,17 @@ header {
 }
 
 
-.find-desk{
-    padding: 0 1rem;
+.find-desk li{
+    border-left: 2px solid transparent;
+}
+
+.find-desk li:first-child{
+    border-left: 2px solid lightgreen;
+}
+
+
+.find-desk img{
+    margin: 10px 10px;
 }
 
 .list-inline img{
@@ -186,17 +200,16 @@ header {
 }
 
 .find-desk .list-inline li{
-    padding: .9375rem 0;
+    
 }
 
 .find-desk .list-inline li:first-child{
-    padding-bottom: .9375rem;
-    padding-top: 0;
+   
 }
 
 
 .playlist{
-    padding: 0 1rem;
+    padding: .625rem 1rem;
 }
 
 .make-playlist{
@@ -213,17 +226,18 @@ header {
 }
 
 .name-playlist{
+    flex-grow: 1;
+    margin-bottom: auto;
+    padding: .625rem 16px;
     overflow-y: auto;
 }
 
 .name-playlist .list-inline li{
-    padding: .625rem 0;
+    padding: .3125rem 0;
 }
 
 .credits{
-    position: absolute;
-    bottom: 0;
-    padding: 1.875rem 1rem;
+    padding: .625rem 1rem;
 
 }
 
