@@ -476,3 +476,41 @@ header {
 #shuffle{
     font-size: 20px;
 }
+
+
+.col-footer-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.down-icon-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.up-icon-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.number{
+    color: var(--first-color);
+    padding: 0 10px;
+}
+
+.barr-time-grey{
+    height: 4px;
+    width: 400px;
+    background-color:var(--first-color) ;
+}
+
+.barr-time-white{
+    height: 100%;
+    width: 80px;
+    background-color: var(--second-color);
+}
