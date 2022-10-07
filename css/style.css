@@ -262,6 +262,11 @@ header {
     padding: .3125rem 0;
 }
 
+
+.core-list-aside li a:hover{
+    color: var(--second-color);
+}
+
 .credits{
     padding: .625rem 1rem;
     color: var(--first-color)
@@ -396,6 +401,7 @@ header {
 .main-nav{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .nav-list ul{
@@ -409,9 +415,41 @@ header {
     padding: 0 15px;
 }
 
-.nav-list ul li a:hover{
+.nav-list ul li a h5:hover{
     color: var(--second-color);
 }
+
+
+.title-played{
+    font-weight: bold;
+    padding: 20px 20px;
+    margin-top: 30px;
+    color: var(--second-color);
+}
+
+.row-main{
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+}
+
+.col-main{
+    width: calc(100% / 6);
+    padding: 0 10px ;
+}
+
+
+
+
+
+
+
+/* ---------------------
+        MAIN
+--------------------- */
+
+
+
 
 
 
