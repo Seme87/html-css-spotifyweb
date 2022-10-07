@@ -57,7 +57,14 @@ a{
 --------------------- */
 
 
+/* ---------------------
+       FLEX
+--------------------- */
 
+.flex{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -447,3 +454,25 @@ header {
     display: flex;
 }
 
+.up-icon-center a{
+    padding: 0 .625rem;
+    color: var(--second-color);
+}
+
+.up-icon-center{
+    display: flex;
+    align-items: center;
+}
+
+#play{
+    font-size: 1.875rem;
+    padding:0 25px;
+}
+
+#backfor{
+    font-size: 20px;
+}
+
+#shuffle{
+    font-size: 20px;
+}
