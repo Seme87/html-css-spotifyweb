@@ -407,6 +407,26 @@ header {
     padding-top: 10px;
 }
 
+
+.main-nav li::after{
+    content: "";
+    display: none;
+    position: absolute;
+    left: calc(50% - 25px);
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    background-color: lightgreen;
+}
+
+.main-nav li:hover::after{
+    display: block;
+}
+
+.main-nav li{
+    position: relative;
+}
+
 .nav-list ul{
     display: flex;
     list-style: none;
