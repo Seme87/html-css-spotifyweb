@@ -270,6 +270,9 @@ header {
     color: var(--second-color);
 }
 
+
+
+
 .credits{
     padding: .625rem 1rem;
     color: var(--first-color)
@@ -296,6 +299,11 @@ header {
 
 .credits h4{
     color: var(--second-color)
+}
+
+
+.credits:hover p a{
+    color: var(--second-color);
 }
 
 .user{
@@ -503,6 +511,15 @@ header {
     color: var(--first-color);
 }
 
+.title-played h5{
+    padding-top: 20px;
+    color: var(--first-color);
+}
+
+
+.img-special img{
+    border-radius: 50%;
+}
 
 
 
@@ -525,6 +542,11 @@ header {
     .col-main {
             width: calc(100% / 4);
             padding: 0 10px;
+    }
+
+    .main-nav li::after {
+        margin-top: -5px;
+        
     }
     
 
@@ -618,7 +640,13 @@ header {
 }
 
 .preferiti{
+    padding: .625rem 0;
     display: flex;
+}
+
+
+.preferiti:hover a{
+    color: var(--second-color);
 }
 
 .up-icon-center a{
